@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Squad 142</title>
+  <style>
+    :root{
+      --primary:#1a237e;
+      --accent:#e3f2fd;
+      --muted:#f5f5f5;
+      --link:#0d47a1;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #2c3e50;
+      line-height: 1.5;
+    }
+
+    /* Header with image on the right */
+    header {
+      background-color: var(--muted);
+      padding: 20px;
+    }
+
+    .header-inner{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .header-text {
+      flex: 1 1 480px;
+    }
+
+    .header-text h1, .header-text p {
+      margin: 0 0 8px 0;
+    }
+
+    .header-text h1 { color: var(--primary); font-size: 1.6rem; }
+    .header-text p { color: #444; max-width: 700px; }
+
+    /* Image styling */
+    .header-image {
+      flex: 0 0 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header-image img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      object-fit: cover;
+    }
+
+    /* Table + content */
+    h1, h2, h3 { color: var(--primary); }
+
+    table {
+      width: 90%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      text-align: center;
+    }
+
+    th {
+      background-color: var(--accent);
+    }
+
+    ul {
+      width: 200px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--link);
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #d32f2f;
+    }
+
+    form {
+      background-color: #fafafa;
+      padding: 20px;
+      width: 300px;
+      margin: 30px auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    }
+
+    label { display: block; margin-bottom: 6px; font-weight: bold; }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    button:hover { background-color: #0d47a1; }
+
+    footer {
+      background-color: var(--muted);
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    /* Responsive: stack header content on small screens */
+    @media (max-width: 800px){
+      .header-inner { flex-direction: column-reverse; text-align: center; }
+      .header-image { width: 80%; margin: 0 auto; }
+      .header-text p { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-text">
+        <h1>Welcome to Squad 142</h1>
+        <p>A collaborative squad working on frontend magic! Squad 142 is a group of 5 frontend web developers learning and building together. We collaborate, innovate, and build awesome projects using HTML, CSS, and Git!</p>
+      </div>
+
+      <!-- Image placed to the right of the header text on desktop, stacked on mobile -->
+      <div class="header-image" aria-hidden="false">
+        <img src="https://thecodelesscode.com/pages/talk-hacking-the-mind/img4.jpg" alt="Team creative illustration" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 style="text-align: center; margin-top:28px;">🚀 Squad Information</h2>
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>SRM ID</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>Karthik</td>
+          <td>25110130002</td>
+          <td>karthik.padavala.s.142@kalvium.community</td>
+        </tr>
+        <tr>
+          <td>Sai Nandan</td>
+          <td>25110130022</td>
+          <td>nandan.patibandla.s.142@kalvium.community</td>
+        </tr>
+        <tr>
+          <td>Vinay Kumar</td>
+          <td>25110130001</td>
+          <td>vinaykumar.padavala.s.142@kalvium.community</td>
+        </tr>
+        <tr>
+          <td>Kushal</td>
+          <td>25110130018</td>
+          <td>kushal.tammana.s.142@kalvium.community</td>
+        </tr>
+        <tr>
+          <td>Yashwanth Sai</td>
+          <td>25110130016</td>
+          <td>yashwanth.danala.s.142@kalvium.community</td>
+        </tr>
+      </table>
+
+      <h3 style="text-align: center;">👨‍💻 Meet the Squad</h3>
+      <ul>
+        <li><a href="file:///C:/Users/kusha/VS%20CODE%20PROJECT%201/karthik.html">Karthik</a></li>
+        <li><a href="file:///C:/Users/kusha/VS%20CODE%20PROJECT%201/sainandan.html">Sai Nandan</a></li>
+        <li><a href="file:///C:/Users/kusha/VS%20CODE%20PROJECT%201/vinay.html">Vinay Kumar</a></li>
+        <li><a href="file:///C:/Users/kusha/VS%20CODE%20PROJECT%201/kushal.html">Kushal</a></li>
+        <li><a href="file:///C:/Users/kusha/VS%20CODE%20PROJECT%201/yaswanth.html">Yashwanth Sai</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 style="text-align: center;">📩 Contact Us</h3>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email">
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Squad 142 | Built with 💻 and ☕</p>
+  </footer>
+</body>
+</html>
